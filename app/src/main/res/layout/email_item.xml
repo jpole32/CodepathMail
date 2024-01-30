@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
 
     <TextView
         android:id="@+id/sender"
@@ -31,5 +33,8 @@
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/emailTitle"
+        android:lines="1"
+        android:ellipsize="end"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
